@@ -1,0 +1,28 @@
+@use '../variables';
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding-top: 1em;
+
+    @media (max-width:640px){
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    input{
+        height: 35px;
+        color: variables.$corSecundaria;
+        width: 15em;
+    }
+
+        &__a{
+            padding: 8px;
+            background-color: variables.$colorButton;
+            text-decoration: none;
+        }
+}
